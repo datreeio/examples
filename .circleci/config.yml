@@ -15,8 +15,7 @@ jobs:
       - run: echo "Datree test kube/*"
 
 workflows:
-  welcome:
+  main:
     jobs:
       - build
       - test
-      
