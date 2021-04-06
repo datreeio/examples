@@ -1,0 +1,20 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'building node project...'",
+    "test": "echo 'Running node tests...'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datreeio/examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datreeio/examples/issues"
+  },
+  "homepage": "https://github.com/datreeio/examples#readme"
+}
