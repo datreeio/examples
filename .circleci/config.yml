@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cimg/base
+      - image: circleci/node
     steps:
       - checkout
       - run: echo "Datree test kube/*"
