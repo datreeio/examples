@@ -12,7 +12,9 @@ jobs:
     steps:
       - checkout
       - run: npm run test
-      - run: echo "Datree test kube/*"
+      - run: wget https://clipublic.s3.amazonaws.com/datree-cli_0.0.261-main_Linux_x86_64/datree
+      - run: chmod +x datree
+      - run: ./datree test kube/deployment.yaml
 
 workflows:
   main:
