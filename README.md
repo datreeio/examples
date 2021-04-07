@@ -7,3 +7,7 @@
 ## GitHub Actions
 
 `.github/workflows/node.js.yml`
+
+## GitLab
+
+`.gitlab-ci.yml`
