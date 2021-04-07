@@ -11,3 +11,7 @@
 ## GitLab
 
 `.gitlab-ci.yml`
+
+## Travis CI
+
+`.travis.yml`
