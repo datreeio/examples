@@ -12,7 +12,7 @@ jobs:
     steps:
       - checkout
       - run: npm run test
-      - run: curl -L https://get.datree.io/install-Linux.sh | /bin/bash
+      - run: curl -s -L https://get.datree.io/install-Linux.sh | /bin/bash
       - run: chmod +x $OUTPUT_BASENAME/datree
       - run: datree test kube/deployment.yaml
 
