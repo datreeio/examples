@@ -13,5 +13,5 @@ test:
     stage: test
     script:
         - npm run test
-        - wget https://clipublic.s3.amazonaws.com/datree-cli_0.0.261-main_Linux_x86_64/datree && chmod +x datree
-        - ./datree test kube/deployment.yaml
+        - curl -L https://get.datree.io/install-Linux.sh | /bin/bash
+        - datree test kube/deployment.yaml
