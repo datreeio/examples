@@ -1,5 +1,7 @@
 # Datree CI integration examples
 
+This repository has examples of how to use Datreeeeee on some of the most popular CI/CD platforms
+
 ## CircleCI
 
 `.circleci/config.yml`
