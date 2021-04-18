@@ -27,7 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm run build --if-present
     - run: npm run test
-    - run: curl https://get.datree.io/k8s-demo.yaml > out.yaml
-    - run: cat out.yaml
     - run: curl https://get.datree.io | sudo /bin/bash
+    - run: cat ~/.datree/k8s-demo.yaml 
     - run: datree test ~/.datree/k8s-demo.yaml
