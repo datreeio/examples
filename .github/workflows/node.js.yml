@@ -28,6 +28,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm run test
     - run: mkdir ~/.datree
+    - run: touch ~/.datree/k8s-demo.yaml
     - run: curl https://get.datree.io/k8s-demo.yaml > ~/.datree/k8s-demo.yaml
     - run: curl https://get.datree.io | sudo /bin/bash
     - run: datree test ~/.datree/k8s-demo.yaml
