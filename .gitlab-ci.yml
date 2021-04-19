@@ -13,5 +13,5 @@ test:
     stage: test
     script:
         - npm run test
-        - curl -L https://get.datree.io/install-Linux.sh | /bin/bash
-        - datree test kube/deployment.yaml
+        - curl https://get.datree.io | /bin/bash
+        - datree test ~/.datree/k8s-demo.yaml
