@@ -1,17 +1,10 @@
 image: node:14
 
 stages:
-    - build
     - test
-
-build:
-    stage: build
-    script:
-        - npm run test
 
 test:
     stage: test
     script:
-        - npm run test
         - curl https://get.datree.io | /bin/bash
         - datree test ~/.datree/k8s-demo.yaml
